@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: white;
+        }
+
+        .container {
+            width: 95%;
+            min-height: 350px;
+            border: 1px solid black;
+            margin: 20px auto;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        p {
+            font-size: 13px;
+            margin: 12px 0;
+        }
+
+        input, select, textarea {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Registration Form</h2>
+
+        <hr>
+
+        <form action="submit.html" method="post">
+
+            <p>
+                <label>Full Name:</label>
+                <input type="text" name="fullname"
+                placeholder="Enter your full name" required>
+            </p>
+
+            <p>
+                <label>Email:</label>
+                <input type="email" name="email"
+                placeholder="Enter valid email address" required>
+            </p>
+
+            <p>
+                <label>Password:</label>
+                <input type="password" name="password"
+                placeholder="Enter password" required>
+            </p>
+
+            <p>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male">
+                Male
+
+                <input type="radio" name="gender" value="Female">
+                Female
+
+                <input type="radio" name="gender" value="Other">
+                Other
+            </p>
+
+            <p>
+                <label>Course:</label>
+
+                <select name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>BBA</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Contact No:</label>
+                <input type="tel" name="contact"
+                placeholder="Enter phone number" required>
+            </p>
+
+            <p>
+                <label>Address:</label>
+                <br>
+
+                <textarea name="address" rows="4" cols="40"
+                placeholder="Enter your address" required></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </p>
+
+        </form>
+
+        <hr>
+
+        <footer>
+            &copy; 2025 Student Registration Portal
+        </footer>
+
+    </div>
+
+</body>
+</html>
