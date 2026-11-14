@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested and Responsive Tables</title>
+
+    <style>
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 500px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Nested Table Example</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>90</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Responsive Table Example</h2>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Aman</td>
+                <td>B.Tech</td>
+                <td>88</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Riya</td>
+                <td>B.Tech</td>
+                <td>92</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
